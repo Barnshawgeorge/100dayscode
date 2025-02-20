@@ -1,2 +1,5 @@
-a = int("5") / int(2.7)
-print(a)
+a = ["a", "b", "c", "d"]
+
+num_list = len(a)
+
+print(a[num_list -1])
