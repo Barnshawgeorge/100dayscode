@@ -1,25 +1,20 @@
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+student_scores = {
+    'Harry': 88,
+    'Ron': 78,
+    'Hermione': 95,
+    'Draco': 75,
+    'Neville': 60
+}
 
-test = "Hello world"
-new = ""
-shift = 2
+student_grades = {}
 
-for i in test.lower():
-    if(i == " "):
-        new += " "
-    else:
-        get_alph_index = alphabet.index(i) + shift
-        new += alphabet[get_alph_index]
-    
-print(new) 
+for key in student_scores:
+    if(student_scores[key] >= 91 and student_scores[key] <= 100):
+        student_grades[key] = "outstanding"
+    if(student_scores[key] <= 90 and student_scores[key] >= 81):
+        student_grades[key] = "exceeds"   
 
 
-def shift_letter(index, shift):
-    new_index = (index + shift) % len(alphabet)  # Modulo to wrap around
-    return alphabet[new_index]
+print(student_grades)
+print(student_scores)
 
-    
-    if(direction == "encode"):
-        print(f"Here is the encoded result: {encrypt(text, shift)}")
-    if(direction == "decrypt"):
-        print(f"Here is the decoded result: {decrypt(text, shift)}")
