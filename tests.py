@@ -1,20 +1,9 @@
-student_scores = {
-    'Harry': 88,
-    'Ron': 78,
-    'Hermione': 95,
-    'Draco': 75,
-    'Neville': 60
-}
-
-student_grades = {}
-
-for key in student_scores:
-    if(student_scores[key] >= 91 and student_scores[key] <= 100):
-        student_grades[key] = "outstanding"
-    if(student_scores[key] <= 90 and student_scores[key] >= 81):
-        student_grades[key] = "exceeds"   
-
-
-print(student_grades)
-print(student_scores)
-
+def is_leap_year(year):
+    if (year % 4 == 0):
+        return True
+    elif(year % 100 = 0):
+        return False
+    elif(year % 400 == 0):
+        return True
+    else:
+        return False
