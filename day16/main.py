@@ -25,3 +25,15 @@ while(not game_over):
                 prog_coffee_maker.make_coffee(prog_menu.find_drink("cappuccino"))
     if(user_input == 'off'):
         game_over = True
+
+
+#A easier way this could have been done
+'''
+espresso = MenuItem("espresso", 50, 0, 18, 1.5)
+latte = MenuItem("latte", 200, 150, 24, 2.5)
+cappuccino = MenuItem("cappuccino", 250, 100, 24, 3.0)
+    else:
+        coffee_choice = menu.find_drink(choice)
+        if coffee_maker.is_resource_sufficient(espresso) and money_machine.make_payment(espresso.cost):
+            coffee_maker.make_coffee(coffee_choice)
+'''
